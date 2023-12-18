@@ -6,4 +6,5 @@ dash-renderer
 plotly
 pandas
 numpy
+openpyxl
 gunicorn
