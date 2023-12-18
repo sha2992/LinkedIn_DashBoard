@@ -7,14 +7,14 @@ from dash import dcc, html, Input, Output
 work_df = pd.read_excel('LinkedIn_Demo.xlsx')
 
 # Initialize the Dash app
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, title="LinkedIn DashBoard")
 server = app.server
 
 months = work_df['Month Name'].unique()
 
 # Layout of the dashboard
 app.layout = html.Div([
-    html.Title("LinkedIn DashBoard"),
+    #html.Title("LinkedIn DashBoard"),
     html.H1("Plotly Dashboard"),
 
     # Month range slider with an additional div for styling
